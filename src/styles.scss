@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: inter, sans-serif;
+}
+
+.divider-bottom{
+  border-bottom: 2px solid transparent;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
+}
+
+.nav-border{
+  border-bottom: 2px solid transparent;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
+}
+
+.nav-item{
+  box-sizing: border-box;
+  border: 2px solid transparent;
+
+}
+
+.nav-item:hover, .nav-item:focus{
+  border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
+  animation: sweep 0.5s linear forwards;
+}
+
+@keyframes sweep {
+  0%{
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
+  }
+  100%{
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
+  }
+}
+
+
+.footer-border{
+  border-top: 2px solid transparent;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
+}
+
+@media (screen and max-width:640px) {
+  .mobile-text{
+    font-size: 1rem;
+  }
+
+  .mobile-button{
+    width: 2.75rem;
+  }
+
+  .mobile-icons{
+    margin-top: 1rem;
+  }
+}
+
+
+
+
