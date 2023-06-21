@@ -11,6 +11,9 @@ import { CompanyComponent } from './components/company/company.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {OutlineIconsModule} from "@dimaslz/ng-heroicons";
+import { PropertyCardComponent } from './components/helpers/property-card/property-card.component';
+import { ProjectCardComponent } from './components/helpers/project-card/project-card.component';
+import { FeaturedComponent } from './components/helpers/featured/featured.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import {OutlineIconsModule} from "@dimaslz/ng-heroicons";
     ProjectsComponent,
     MediaComponent,
     CompanyComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PropertyCardComponent,
+    ProjectCardComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,
