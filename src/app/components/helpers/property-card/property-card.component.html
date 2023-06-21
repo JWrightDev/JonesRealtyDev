@@ -1,0 +1,16 @@
+<div class="max-w-sm bg-[#161616] border border-transparent rounded-lg shadow overflow-hidden text-left h-full flex flex-1 flex-col">
+  <a href="{{propertyItem.contactLink}}">
+    <img class="w-full h-56 object-cover" src="{{propertyItem.thumbnailLink}}" alt="Image of the property" />
+  </a>
+  <div class="p-5">
+    <a href="{{propertyItem.contactLink}}" class="hover:underline hover:text-primary focus:underline focus:text-primary">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">{{propertyItem.address}}</h5>
+    </a>
+    <p class="mb-3 font-normal text-white">{{propertyItem.description}}</p>
+  </div>
+  <div class="text-center mt-auto p-2 relative bottom-0">
+    <a href="{{propertyItem.contactLink}}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black bg-opacity-50 rounded-lg focus:outline-none hover:bg-black focus:bg-black active:bg-black">
+      View Details
+    </a>
+  </div>
+</div>

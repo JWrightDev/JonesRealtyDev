@@ -14,6 +14,7 @@ import {OutlineIconsModule} from "@dimaslz/ng-heroicons";
 import { PropertyCardComponent } from './components/helpers/property-card/property-card.component';
 import { ProjectCardComponent } from './components/helpers/project-card/project-card.component';
 import { FeaturedComponent } from './components/helpers/featured/featured.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -28,12 +29,13 @@ import { FeaturedComponent } from './components/helpers/featured/featured.compon
     ProjectCardComponent,
     FeaturedComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    OutlineIconsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        OutlineIconsModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
