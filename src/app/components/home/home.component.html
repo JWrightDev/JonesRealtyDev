@@ -122,23 +122,22 @@
 <section class="text-center w-[75%] mx-auto">
   <h2 class="text-center lg:text-3xl text-xl text-primary mt-5">Featured Property</h2>
 
-  <app-featured>
+  <app-featured *ngFor="let featured of featuredList; index as i; first as isFirst;" [featuredItem]="featured" [class.isFirst]="isFirst">
 
   </app-featured>
 
 </section>
 
 <!--Contact / Info Section-->
-<section class="flex flex-col lg:flex-row items-center">
+<section class="flex flex-col lg:flex-row items-center m-5 p-3">
   <div class="w-[50%] text-center">
-    <p class="text-primary text-center p-2 m-2 mobile-text">Want to learn more about the company?</p>
-    <a [routerLink]="['company']" class="p-3 m-2 text-center bg-black rounded-xl mobile-button">Learn More</a>
+    <p class="text-primary text-center p-2 m-2 mobile-text ">Want to learn more about the company?</p>
+    <a [routerLink]="['company']" class="p-3 px-4 m-2 text-center bg-black rounded-xl mobile-button inline-block">Learn More</a>
   </div>
   <div class="w-[50%] text-center">
     <p class="text-primary text-center p-2 m-2 mobile-text">Want to learn more about developing with us?</p>
-    <a [routerLink]="['company#contact']" class="p-3 m-2 text-center bg-black rounded-xl mobile-button">Let's Talk</a>
+    <a [routerLink]="['company#contact']" class="p-3 px-4 m-2 text-center bg-black rounded-xl mobile-button inline-block">Let's Talk</a>
   </div>
-
 </section>
 
 

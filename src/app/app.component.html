@@ -1,4 +1,5 @@
-<div class="nav-border">
+<div class="divider-bottom">
+<!--Banner-->
   <section class="flex bg-[#1e1e1e] justify-end">
     <div class="flex flex-row items-center p-1">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="lg:w-[1.3rem] lg:h-[1.3rem] w-[3rem] h-[3rem]">
@@ -18,12 +19,13 @@
       <a class="ml-[0.25rem] text-white text-[1rem] hover:text-primary focus:text-primary mobile-text" href="tel:2263459045">226-345-9045</a>
     </div>
   </section>
+
+<!--Nav Bar-->
   <nav class="bg-black border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
+    <div class="max-w-screen-xl grid lg:grid-cols-3 grid-cols-2 items-center mx-auto p-4">
       <a [routerLink]="['']" class="flex lg:items-center">
         <img src="./assets/JonesRealtyLogo.png" class="lg:h-24 mr-3 h-14" alt="Jones Realty Logo" />
       </a>
-
       <button type="button" class="inline-flex items-center p-2 ml-auto text-sm lg:hidden" id="menu-toggle"
               data-te-collapse-init
               data-te-target="#menu"
@@ -34,22 +36,22 @@
         <svg class="w-6 h-6 float-right" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
       </button>
 
-      <div class="hidden w-full lg:w-auto lg:block bg-black ms-auto " id="menu">
+      <div class="hidden w-full lg:w-auto lg:block bg-black lg:col-span-2" id="menu">
         <ul class="flex flex-col md:flex-row w-auto box-border">
-          <li class="nav-item mx-1 transition lg:w-full md:w-[10rem] text-center ">
-              <a [routerLink]="['properties']" class="text-[#FAFF00] block w-[100%] p-5">Properties</a>
+          <li class=" mx-1 lg:w-full md:w-[10rem] text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary ease-in-out p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
+              <a [routerLink]="['properties']" class="text-[#FAFF00] block w-[100%] p-5 bg-black">Properties</a>
           </li>
-          <li class="nav-item mx-1 transition lg:w-full md:w-[10rem] text-center">
-              <a [routerLink]="['projects']" class="text-[#FAFF00] block w-[100%] p-5">Projects</a>
+          <li class=" mx-1 lg:w-full md:w-[10rem] text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
+              <a [routerLink]="['projects']" class="text-[#FAFF00] block w-[100%] p-5 bg-black">Projects</a>
           </li>
-          <li class="nav-item mx-1 transition lg:w-full md:w-[10rem] text-center">
-              <a [routerLink]="['media']" class="text-[#FAFF00] block w-[100%] p-5">Media</a>
+          <li class=" mx-1 lg:w-full md:w-[10rem] text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
+              <a [routerLink]="['media']" class="text-[#FAFF00] block w-[100%] p-5 bg-black">Media</a>
           </li>
-          <li class="nav-item mx-1 transition lg:w-full md:w-[10rem] text-center">
-              <a [routerLink]="['company']" class="text-[#FAFF00] block w-[100%] p-5">Company</a>
+          <li class=" mx-1 lg:w-full md:w-[10rem] text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
+              <a [routerLink]="['company']" class="text-[#FAFF00] block w-[100%] p-5 bg-black">Company</a>
           </li>
-          <li class="nav-item mx-1 transition lg:w-full md:w-[10rem] text-center">
-              <a [routerLink]="['company']" fragment="contact" class="text-[#FAFF00] block w-[100%] p-5">Contact</a>
+          <li class=" mx-1 lg:w-full md:w-[10rem] text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
+              <a [routerLink]="['company']" fragment="contact" class="text-[#FAFF00] block w-[100%] p-5 bg-black">Contact</a>
           </li>
         </ul>
       </div>
@@ -57,11 +59,13 @@
   </nav>
 </div>
 
+<!--Body-->
 <div class="md:w-[75%] mx-auto my-5">
   <router-outlet></router-outlet>
 </div>
 
-<div class="footer flex flex-col footer-border bg-black p-5">
+<!--Footer-->
+<div class="footer flex flex-col divider-top bg-black">
   <div class="flex flex-col md:flex-row p-5">
     <section class="text-center flex items-center justify-center mx-auto lg:text-3xl text-xl">Please feel free to <br/>get in touch with us</section>
     <section class="mx-auto justify-center items-center flex my-5">
@@ -97,7 +101,7 @@
       </div>
     </section>
   </div>
-  <div class="grid lg:grid-cols-3 footer-border items-center text-center py-2">
+  <div class="grid lg:grid-cols-3 divider-top items-center text-center p-2">
     <section class="flex flex-row items-center my-3">
       <img src="./assets/JonesRealtyLogo.png" alt="Jones Realty Logo" class="md:w-[25%] w-[50%]">
       Jones Realty Inc.
