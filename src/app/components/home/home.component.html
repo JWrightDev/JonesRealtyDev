@@ -130,13 +130,13 @@
 
 <!--Contact / Info Section-->
 <section class="flex flex-col lg:flex-row items-center m-5 p-3">
-  <div class="w-[50%] text-center">
+  <div class="md:w-[50%] text-center">
     <p class="text-primary text-center p-2 m-2 mobile-text ">Want to learn more about the company?</p>
-    <a [routerLink]="['company']" class="p-3 px-4 m-2 text-center bg-black rounded-xl mobile-button inline-block">Learn More</a>
+    <a [routerLink]="['company']" class=" rounded-xl bg-black px-5 py-2 m-2 h-[44px] hover:text-primary focus:text-primary hover:bg-[#111111] focus:bg-[#111111] active:text-primary active:bg-[#111111]">Learn More</a>
   </div>
-  <div class="w-[50%] text-center">
+  <div class="md:w-[50%] text-center">
     <p class="text-primary text-center p-2 m-2 mobile-text">Want to learn more about developing with us?</p>
-    <a [routerLink]="['company#contact']" class="p-3 px-4 m-2 text-center bg-black rounded-xl mobile-button inline-block">Let's Talk</a>
+    <a [routerLink]="['company']" fragment="contact" class="rounded-xl bg-black px-5 py-2 m-2 h-[44px] hover:text-primary focus:text-primary hover:bg-[#111111] focus:bg-[#111111] active:text-primary active:bg-[#111111]">Let's Talk</a>
   </div>
 </section>
 
