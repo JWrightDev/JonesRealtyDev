@@ -12,4 +12,23 @@ export class AppComponent implements OnInit {
         initTE({Collapse});
     }
 
+    addTarget() {
+        const navItems = document.querySelectorAll('.nav-item');
+        if (navItems) {
+            navItems.forEach(navItem => {
+                navItem.setAttribute("data-te-target", "#menu");
+            });
+        }
+        return;
+    }
+
+    removeTarget() {
+        const navItems = document.querySelectorAll('.nav-item');
+        if (navItems) {
+            navItems.forEach(navItem => {
+                navItem.removeAttribute("data-te-target");
+            });
+        }
+        return;
+    }
 }

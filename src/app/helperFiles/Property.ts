@@ -1,7 +1,8 @@
-export interface Property{
-  id: number;
-  address: string;
-  description: string;
-  contactLink: string;
-  thumbnailLink: string;
+export interface Property {
+    id: number;
+    address: string;
+    description: string;
+    contactLink: string;
+    thumbnailLink: string;
+    altText: string;
 }
