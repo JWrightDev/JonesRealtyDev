@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {initTE, Collapse} from "tw-elements";
+import {NavigationEnd, Router} from "@angular/router";
 
 
 @Component({
@@ -8,8 +9,18 @@ import {initTE, Collapse} from "tw-elements";
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
+    constructor(private router: Router) {
+    }
+
     ngOnInit() {
         initTE({Collapse});
+        this.router.events.subscribe((event) => {
+            if (!(event instanceof NavigationEnd)) {
+                return;
+            }
+            window.scrollTo(0, 0);
+        });
     }
 
     addTarget() {
