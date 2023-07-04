@@ -11,27 +11,27 @@ import {NotFoundComponent} from "./components/not-found/not-found.component";
 
 const routes: Routes = [
     {
-        path: 'JonesRealty',
+        path: '',
         component: HomeComponent,
         title: 'Jones Realty Inc. - Home'
     },
     {
-        path: 'JonesRealty/properties',
+        path: 'properties',
         component: PropertiesComponent,
         title: 'Jones Realty Inc. - Properties'
     },
     {
-        path: 'JonesRealty/projects',
+        path: 'projects',
         component: ProjectsComponent,
         title: 'Jones Realty Inc. - Projects'
     },
     {
-        path: 'JonesRealty/media',
+        path: 'media',
         component: MediaComponent,
         title: 'Jones Realty Inc. - Media'
     },
     {
-        path: 'JonesRealty/company',
+        path: 'company',
         component: CompanyComponent,
         title: 'Jones Realty Inc. - Company / Contact'
     },
