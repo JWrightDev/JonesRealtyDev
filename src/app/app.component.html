@@ -32,8 +32,8 @@
         <!--Nav Bar-->
         <nav class="bg-black border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl grid lg:grid-cols-3 grid-cols-2 items-center mx-auto p-4">
-                <a [routerLink]="['']" class="flex lg:items-center nav-item"
-                   data-te-collapse-init>
+                <a [routerLink]="['']" class="flex lg:items-center"
+                   appMobileCollapse>
                     <img src="./assets/JonesRealtyLogo.png"
                          class="md:h-24 mr-3 h-14" alt="Jones Realty Logo"/>
                 </a>
@@ -44,7 +44,7 @@
                         data-te-target="#menu"
                         aria-controls="menu"
                         aria-expanded="false"
-                        aria-label="Toggle Navigation" (click)="addTarget()">
+                        aria-label="Toggle Navigation">
                     <span class="sr-only">Open Navigation</span>
                     <svg class="w-6 h-6 float-right" aria-hidden="true"
                          fill="white"
@@ -60,31 +60,31 @@
                         <a [routerLink]="['properties']"
                            class="text-[#FAFF00] block w-[100%] p-5 bg-black nav-item"
                            data-te-collapse-init
-                           (click)="removeTarget()">Properties</a>
+                           appMobileCollapse>Properties</a>
                     </li>
                     <li class=" mx-1 lg:w-full  text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
                         <a [routerLink]="['projects']"
                            class="text-[#FAFF00] block w-[100%] p-5 bg-black nav-item"
                            data-te-collapse-init
-                           (click)="removeTarget()">Projects</a>
+                           appMobileCollapse>Projects</a>
                     </li>
                     <li class=" mx-1 lg:w-full  text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
                         <a [routerLink]="['media']"
                            class="text-[#FAFF00] block w-[100%] p-5 bg-black nav-item"
                            data-te-collapse-init
-                           (click)="removeTarget()">Media</a>
+                           appMobileCollapse>Media</a>
                     </li>
                     <li class=" mx-1 lg:w-full  text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
                         <a [routerLink]="['company']"
                            class="text-[#FAFF00] block w-[100%] p-5 bg-black nav-item"
                            data-te-collapse-init
-                           (click)="removeTarget()">Company</a>
+                           appMobileCollapse>Company</a>
                     </li>
                     <li class=" mx-1 lg:w-full  text-center bg-black hover:bg-gradient-to-r focus:bg-gradient-to-r from-secondary to-primary p-0.5 hover:animate-gradient-x focus:animate-gradient-x">
                         <a [routerLink]="['company']" fragment="contact"
                            class="text-[#FAFF00] block w-[100%] p-5 bg-black nav-item"
                            data-te-collapse-init
-                           (click)="removeTarget()">Contact</a>
+                           appMobileCollapse>Contact</a>
                     </li>
                 </ul>
             </div>

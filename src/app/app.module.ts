@@ -15,6 +15,7 @@ import { PropertyCardComponent } from './components/helpers/property-card/proper
 import { ProjectCardComponent } from './components/helpers/project-card/project-card.component';
 import { FeaturedComponent } from './components/helpers/featured/featured.component';
 import {NgOptimizedImage} from "@angular/common";
+import { MobileCollapseDirective } from './mobile-collapse.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {NgOptimizedImage} from "@angular/common";
     NotFoundComponent,
     PropertyCardComponent,
     ProjectCardComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    MobileCollapseDirective
   ],
     imports: [
         BrowserModule,
