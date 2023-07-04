@@ -16,6 +16,7 @@ import { ProjectCardComponent } from './components/helpers/project-card/project-
 import { FeaturedComponent } from './components/helpers/featured/featured.component';
 import {NgOptimizedImage} from "@angular/common";
 import { MobileCollapseDirective } from './mobile-collapse.directive';
+import { AddTargetDirective } from './add-target.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MobileCollapseDirective } from './mobile-collapse.directive';
     PropertyCardComponent,
     ProjectCardComponent,
     FeaturedComponent,
-    MobileCollapseDirective
+    MobileCollapseDirective,
+    AddTargetDirective
   ],
     imports: [
         BrowserModule,

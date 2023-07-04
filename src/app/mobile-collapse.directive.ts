@@ -14,7 +14,11 @@ export class MobileCollapseDirective implements OnInit {
     ngOnInit() {
         this.screenWidth = window.innerWidth;
         if (this.screenWidth <= 1023) {
-            this.elem.nativeElement.setAttribute('data-te-target', '#menu');
+            if (this.elem.nativeElement == document.getElementsByClassName('nav-item')) {
+                this.elem.nativeElement.setAttribute('data-te-target', '#menu');
+            } else {
+                return
+            }
         } else {
             this.elem.nativeElement.removeAttribute('data-te-target');
         }
@@ -24,9 +28,14 @@ export class MobileCollapseDirective implements OnInit {
     onWindowResize() {
         this.screenWidth = window.innerWidth;
         if (this.screenWidth <= 1023) {
-            this.elem.nativeElement.setAttribute('data-te-target', '#menu');
+            if (this.elem.nativeElement == document.getElementsByClassName('nav-item')) {
+                this.elem.nativeElement.setAttribute('data-te-target', '#menu');
+            } else {
+                return
+            }
         } else {
             this.elem.nativeElement.removeAttribute('data-te-target');
         }
     }
+
 }
