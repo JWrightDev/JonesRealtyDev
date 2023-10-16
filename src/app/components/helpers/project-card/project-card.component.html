@@ -1,0 +1,21 @@
+<div class="max-w-sm bg-[#161616] rounded-lg overflow-hidden text-left h-full flex flex-1 flex-col box-shadow-card">
+    <!--    <a href="{{projectItem.projectContactLink}}" class="w-full">-->
+    <img class="w-full h-56 object-contain"
+         src="{{projectItem.thumbnailLink}}"
+         alt="Image of the property" loading="lazy"/>
+    <!--    </a>-->
+    <div class="p-5">
+        <span class="text-primary text-opacity-[35%]">{{projectItem.projectCategory}}</span>
+        <!--        <a href="{{projectItem.projectContactLink}}"-->
+        <!--           class="hover:underline hover:text-primary focus:underline focus:text-primary">-->
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">{{projectItem.projectName}}</h5>
+        <!--        </a>-->
+        <p class="mb-3 font-normal text-white">{{projectItem.projectDescription}}</p>
+    </div>
+    <!--    <div class="text-center mt-auto p-2 relative bottom-0">-->
+    <!--        <a href="{{projectItem.projectContactLink}}"-->
+    <!--           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-black bg-opacity-50 rounded-lg focus:outline-none hover:bg-black focus:bg-black active:bg-black">-->
+    <!--            View Details-->
+    <!--        </a>-->
+    <!--    </div>-->
+</div>
