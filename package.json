@@ -24,8 +24,14 @@
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "tw-elements": "^1.0.0-beta2",
     "zone.js": "~0.12.0"
+=======
+    "tw-elements": "^1.0.0",
+    "zone.js": "~0.12.0",
+    "postcss": "^8.4.31"
+>>>>>>> Stashed changes
 =======
     "tw-elements": "^1.0.0",
     "zone.js": "~0.12.0",
