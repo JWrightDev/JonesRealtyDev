@@ -1,8 +1,8 @@
-export interface Featured{
-  id: number;
-  address: string;
-  thumbnail: string;
-  email: string;
-  contactLink: string;
-  description: string;
+export interface Featured {
+    id: number;
+    address: string;
+    thumbnails: string[];
+    email?: string;
+    contactLink: string;
+    description: string;
 }

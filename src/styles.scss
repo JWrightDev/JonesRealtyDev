@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: inter, sans-serif;
 }
 
-.divider-bottom{
+html, body {
+  height: 100%;
+}
+
+.divider-bottom {
   border-bottom: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
 }
 
-.divider-top{
+.divider-top {
   border-top: 2px solid transparent;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, #b12016 0%, #faff00 100%);
 }
 
-app-property-card, app-project-card{
+app-property-card, app-project-card {
   box-sizing: border-box !important;
   background: #161616;
   border: 0 solid transparent;
@@ -27,30 +31,33 @@ app-property-card, app-project-card{
 }
 
 
-
-@media (screen and max-width:767px){
-  .mobile-media{
+@media (screen and max-width: 767px) {
+  .mobile-media {
     align-items: center;
   }
 }
 
-@media (screen and max-width:640px) {
+@media (screen and max-width: 640px) {
 
-  .mobile-text{
+  .mobile-text {
     font-size: 1rem;
   }
 
-  .mobile-button{
+  .mobile-button {
     width: 2.75rem;
   }
 
-  .mobile-icons{
+  .mobile-icons {
     margin-top: 1rem;
   }
 }
 
 
+html, body {
+  height: 100%;
+}
 
-
-
-
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
