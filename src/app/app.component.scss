@@ -1,3 +1,15 @@
 .module{
   scroll-behavior: smooth;
 }
+
+app-loading-screen.unload{
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+app-loading-screen.load{
+  opacity: 1;
+}
+
+
+

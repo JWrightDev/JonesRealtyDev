@@ -1,0 +1,87 @@
+<!--Footer-->
+<div class="footer flex flex-col divider-top bg-black mt-auto">
+  <div class="flex flex-col md:flex-row p-5">
+    <section
+      class="text-center flex items-center justify-center mx-auto lg:text-3xl text-xl">
+      Please feel free to <br/>get in touch with us
+    </section>
+    <section class="mx-auto justify-center items-center flex my-5">
+      <ul class="flex flex-col">
+        <li class="p-2"><a [routerLink]="['properties']"
+                           class="hover:text-primary text-primary lg:text-white">Properties</a>
+        </li>
+        <li class="p-2"><a [routerLink]="['projects']"
+                           class="hover:text-primary text-primary lg:text-white">Projects</a>
+        </li>
+        <li class="p-2"><a [routerLink]="['media']"
+                           class="hover:text-primary text-primary lg:text-white">Media</a>
+        </li>
+        <li class="p-2"><a [routerLink]="['company']"
+                           class="hover:text-primary text-primary lg:text-white">Company</a>
+        </li>
+        <li class="p-2"><a [routerLink]="['company']"
+                           fragment="contact"
+                           class="hover:text-primary text-primary lg:text-white">Contact</a>
+        </li>
+      </ul>
+    </section>
+    <section class="mx-auto flex justify-center flex-col">
+      <div class="flex lg:flex-row p-1">
+        <envelope-outline-icon class="m-1 mt-0"
+                               color="#FFFF40"></envelope-outline-icon>
+        <div>
+          <p>How can we Help?</p>
+          <a href="mailto:mackie.jones@jonesgroup.ca"
+             class="hover:text-primary focus:text-primary underline">mackie.jones@jonesgroup.ca</a>
+        </div>
+      </div>
+      <div class="flex flex-row p-1">
+        <map-pin-outline-icon class="m-1 mt-0"
+                              color="#FFFF40"></map-pin-outline-icon>
+        <div>
+          <p>Our Location</p>
+          <a class="hover:text-primary focus:text-primary underline"
+             href="https://www.google.com/maps/place/56+Richmond+St,+Amherstburg,+ON+N9V+1E9/@42.1027875,-83.1149888,17z/data=!3m1!4b1!4m6!3m5!1s0x883b3c84be9eabd1:0x244ccac3ab5bb14a!8m2!3d42.1027835!4d-83.1124139!16s%2Fg%2F11c43vl5ct?entry=ttu">
+            56 Richmond St. Amherstburg, ON. N9V 1E9
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-row p-1">
+        <phone-outline-icon class="m-1 mt-0"
+                            color="#FFFF40"></phone-outline-icon>
+        <div>
+          <p>Give Us a Call</p>
+          <a href="tel:2263459045"
+             class="hover:text-primary focus:text-primary underline">226-345-9045</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="grid lg:grid-cols-3 divider-top items-center text-center p-2">
+    <section
+      class="flex flex-row items-center my-3 justify-center lg:justify-start">
+      <img src="./assets/JonesRealtyLogo.png" alt="Jones Realty Logo"
+           class="md:w-[25%] w-[50%]">
+      Jones Realty Inc.
+    </section>
+    <section class="">
+      &copy; 2023 Jones Realty Inc. - All Rights Reserved
+    </section>
+    <section class="mobile-icons">
+      <div class="flex items-center justify-center">
+        <a href="https://www.facebook.com/amherstburgyachtclub/"
+           class="mx-3 text-neutral-600 dark:text-neutral-200"
+           aria-label="Facebook link to the Amherstburg Yacht Club. Owned by Jones Realty Inc.">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="lg:h-4 lg:w-4 h-8 w-8"
+            fill="white"
+            viewBox="0 0 24 24">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>

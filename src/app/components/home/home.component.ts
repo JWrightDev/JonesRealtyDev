@@ -3,11 +3,13 @@ import {Component, OnInit} from '@angular/core';
 import {Carousel, Modal, Ripple, initTE, Alert} from "tw-elements";
 import {Featured} from "../../helperFiles/Featured";
 import {InfoService} from "../../services/info.service";
+import {routerTransition} from "../../router.animations";
 
 
 
 @Component({
   selector: 'app-home',
+  animations: [routerTransition],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

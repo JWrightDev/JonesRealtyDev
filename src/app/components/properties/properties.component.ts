@@ -1,9 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {Property} from "../../helperFiles/Property";
 import {InfoService} from "../../services/info.service";
+import {routerTransition, } from "../../router.animations";
 
 @Component({
   selector: 'app-properties',
+  animations: [routerTransition],
   templateUrl: './properties.component.html',
   styleUrls: ['./properties.component.scss']
 })

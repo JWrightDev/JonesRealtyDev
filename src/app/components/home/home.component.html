@@ -1,3 +1,31 @@
+<div
+  class="alert alert-dismissible fade show items-center justify-between rounded-lg bg-primary py-4 px-6 text-center text-black md:flex md:text-left m-5" id="banner">
+  <div class="mb-4 flex flex-wrap items-center justify-center md:mb-0 md:justify-start">
+        <span class="mr-2 [&>svg]:h-5 [&>svg]:w-5">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+               stroke="currentColor" class="text-black">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+          </svg>
+        </span>
+    <strong class="mr-1">Coming Soon!</strong> Richmond Praedium Apartments!
+  </div>
+  <div class="flex items-center justify-center">
+    <a class="mr-4 inline-block rounded bg-black px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(251,251,251,0.05)] transition duration-150 ease-in-out hover:bg-secondary hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.05),0_4px_18px_0_rgba(203,203,203,0.05)] focus:bg-secondary focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.05),0_4px_18px_0_rgba(203,203,203,0.05)] focus:outline-none focus:ring-0 active:bg-secondary active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.05),0_4px_18px_0_rgba(203,203,203,0.05)]"
+       [routerLink]="['company']" role="button" data-te-ripple-init data-te-ripple-color="light">Contact Us!</a>
+    <a href="" class="text-white" data-te-alert-dismiss aria-label="Close">
+          <span class="[&>svg]:h-6 [&>svg]:w-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                 stroke="black">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
+    </a>
+  </div>
+</div>
+
 <div class="my-10">
     <h1 class="hidden" aria-hidden="true">Jones Realty Inc.</h1>
     <div class="px-6 py-12 text-center md:px-12 lg:text-left">
@@ -61,14 +89,14 @@
 
     <!--Featured Property-->
     <section
-            class="text-center grid md:grid-cols-2 grid-cols-1">
+            class="text-center grid md:grid-cols-2 grid-cols-1 featured-title mx-5">
             <h2 class="text-center lg:text-3xl text-2xl text-primary m-5 md:col-span-2 shadow-secondary">
             Featured <br> Amherstburg Properties</h2>
 
       <!--Modal 1-->
       <a
         type="button"
-        class="inline-block rounded mb-2 mt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:cursor-pointer overflow-hidden md:w-full w-[85%] mx-auto"
+        class="featured-modal inline-block mb-2 mt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:cursor-pointer overflow-hidden md:w-full w-[85%] mx-auto"
         data-te-toggle="modal"
         data-te-target="#modal"
         data-te-ripple-init
@@ -170,7 +198,7 @@
         </div>
       </div>
 
-      <section class="flex flex-col items-center md:ml-10 justify-center">
+      <section class="featured-modal flex flex-col items-center md:ml-10 justify-center">
         <span
           class="inline-block whitespace-nowrap rounded-[0.27rem] bg-primary px-[0.65em] pb-[0.25em] pt-[0.35em] text-center align-baseline text-[0.75em] font-bold leading-none text-black m-5"
         >New</span>
@@ -188,7 +216,7 @@
       <hr
         class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-primary to-transparent opacity-25 dark:opacity-100 md:col-span-2" />
 
-      <section class="flex flex-col items-center md:mr-10 justify-center">
+      <section class="featured-modal flex flex-col items-center md:mr-10 justify-center">
         <span
           class="inline-block whitespace-nowrap rounded-[0.27rem] bg-primary px-[0.65em] pb-[0.25em] pt-[0.35em] text-center align-baseline text-[0.75em] font-bold leading-none text-black m-5"
         >New</span>
@@ -207,7 +235,7 @@
       <!-- Modal 2 -->
       <a
         type="button"
-        class="inline-block rounded mb-2 mt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:cursor-pointer overflow-hidden md:w-full w-[85%] mx-auto"
+        class="featured-modal inline-block mb-2 mt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:cursor-pointer overflow-hidden md:w-full w-[85%] mx-auto"
         data-te-toggle="modal"
         data-te-target="#modal2"
         data-te-ripple-init

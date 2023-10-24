@@ -30,12 +30,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/vanilla-cookieconsent/dist/cookieconsent.css",
               "src/styles.scss"
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "optimization": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -93,12 +95,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/vanilla-cookieconsent/dist/cookieconsent.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

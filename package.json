@@ -20,12 +20,17 @@
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
     "@dimaslz/ng-heroicons": "^1.15.0",
+    "@emailjs/browser": "^3.11.0",
+    "cookieconsent": "^3.1.1",
     "jquery": "^3.7.0",
+    "ng-recaptcha": "^11.0.0",
+    "ngx-cookieconsent": "^4.0.2",
+    "postcss": "^8.4.31",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "tw-elements": "^1.0.0",
-    "zone.js": "~0.12.0",
-    "postcss": "^8.4.31"
+    "vanilla-cookieconsent": "^3.0.0-rc.16",
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.2.5",
