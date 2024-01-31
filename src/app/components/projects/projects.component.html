@@ -1,8 +1,5 @@
 <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 text-center w-[85%] lg:w-full mx-auto my-10">
     <h1 class="hidden" aria-hidden="true">Jones Realty Inc. Projects</h1>
-    <!--    <h2 class="lg:text-3xl text-xl text-primary text-center pb-3 lg:col-span-3 col-span-1">-->
-    <!--        Our-->
-    <!--        Projects</h2>-->
     <app-project-card
             *ngFor="let project of projectList; index as i; first as isFirst;"
             [projectItem]="project" [class.isFirst]="isFirst"

@@ -9,57 +9,66 @@ import { MediaComponent } from './components/media/media.component';
 import { CompanyComponent } from './components/company/company.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OutlineIconsModule } from "@dimaslz/ng-heroicons";
+import { OutlineIconsModule, SolidIconsModule } from '@dimaslz/ng-heroicons';
 import { PropertyCardComponent } from './components/helpers/property-card/property-card.component';
 import { ProjectCardComponent } from './components/helpers/project-card/project-card.component';
 import { FeaturedComponent } from './components/helpers/featured/featured.component';
-import { NgOptimizedImage } from "@angular/common";
+import { NgOptimizedImage } from '@angular/common';
 import { MobileCollapseDirective } from './directives/mobile-collapse.directive';
 import { AddTargetDirective } from './directives/add-target.directive';
 import { ContactComponent } from './components/contact/contact.component';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from "ng-recaptcha";
-import { RouterModule } from "@angular/router";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+	RECAPTCHA_SETTINGS,
+	RecaptchaFormsModule,
+	RecaptchaModule,
+	RecaptchaSettings,
+} from 'ng-recaptcha';
+import { RouterModule } from '@angular/router';
 import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    PropertiesComponent,
-    ProjectsComponent,
-    MediaComponent,
-    CompanyComponent,
-    NotFoundComponent,
-    PropertyCardComponent,
-    ProjectCardComponent,
-    FeaturedComponent,
-    MobileCollapseDirective,
-    AddTargetDirective,
-    ContactComponent,
-    LoadingScreenComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    OutlineIconsModule,
-    NgOptimizedImage,
-    ReactiveFormsModule,
-    FormsModule,
-    RecaptchaModule,
-    RecaptchaFormsModule,
-    RouterModule,
-  ],
-  providers: [{
-    provide: RECAPTCHA_SETTINGS,
-    useValue: {
-      siteKey: "6Lc7w7goAAAAAJ1o4EfcPOYPvF7U89eYpX0G8wDw",
-    } as RecaptchaSettings,
-  }],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		PropertiesComponent,
+		ProjectsComponent,
+		MediaComponent,
+		CompanyComponent,
+		NotFoundComponent,
+		PropertyCardComponent,
+		ProjectCardComponent,
+		FeaturedComponent,
+		MobileCollapseDirective,
+		AddTargetDirective,
+		ContactComponent,
+		LoadingScreenComponent,
+		FooterComponent,
+  DetailsComponent,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		OutlineIconsModule,
+		NgOptimizedImage,
+		ReactiveFormsModule,
+		FormsModule,
+		RecaptchaModule,
+		RecaptchaFormsModule,
+		RouterModule,
+		SolidIconsModule,
+	],
+	providers: [
+		{
+			provide: RECAPTCHA_SETTINGS,
+			useValue: {
+				siteKey: '6Lc7w7goAAAAAJ1o4EfcPOYPvF7U89eYpX0G8wDw',
+			} as RecaptchaSettings,
+		},
+	],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -161,7 +161,7 @@ export class AppComponent implements OnInit, AfterViewInit {
                 },
                 {
                   title: 'More information',
-                  description: 'We do not use cookies to track you or to store your data. The use of cookies on this website is purely to improve functionality.'
+                  description: 'None of the cookies implemented by us are used to store you data, share your data, or track your usage. Third-party cookies may be used to track your usage, store your data, or share your data.'
                 }
               ]
             }
