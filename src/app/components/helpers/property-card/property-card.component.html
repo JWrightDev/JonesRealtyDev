@@ -4,10 +4,15 @@
 		 src="{{propertyItem.thumbnailLink}}"
 		 alt="{{propertyItem.altText}}"/>
     <div class="p-5">
-        <a href="propertyItem.contactLink" target="_blank"
+        <a *ngIf="propertyItem.contactLink" href="{{propertyItem.contactLink}}" target="_blank"
            class="cursor-pointer hover:underline hover:text-primary focus:underline focus:text-primary">
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-primary">{{propertyItem.address}}</h2>
         </a>
+		<a *ngIf="!propertyItem.contactLink" [routerLink]="['/details/', propertyItem.id]"
+		   class="cursor-pointer hover:underline hover:text-primary focus:underline focus:text-primary">
+			<h2 class="mb-2 text-2xl font-bold tracking-tight text-primary">{{propertyItem.address}}</h2>
+		</a>
+
         <p class="mb-3 font-normal text-white">{{propertyItem.description}}</p>
     </div>
     <div class="text-center mt-auto p-2 relative bottom-0">
