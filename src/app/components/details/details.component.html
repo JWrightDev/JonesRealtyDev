@@ -1,4 +1,4 @@
-<div *ngIf="property.id" class="text-center">
+<div *ngIf="property.address" class="text-center">
 	<h1 class="text-primary text-3xl m-5">{{property.address}}</h1>
 	<img class="mx-auto" src="{{property.thumbnailLink}}" alt="{{property.altText}}">
 	<h2 class="text-primary text-2xl font-bold mt-5 text-center">Contact Us!</h2>
@@ -32,4 +32,4 @@
 	</section>
 </div>
 
-<app-not-found *ngIf="!property.id"></app-not-found>
+<app-not-found *ngIf="!property.address"></app-not-found>

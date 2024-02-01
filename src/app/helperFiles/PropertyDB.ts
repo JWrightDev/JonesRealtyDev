@@ -2,7 +2,7 @@ import { Property } from './Property';
 
 export const PROPERTYLIST: Property[] = [
 	{
-		id: 1,
+		id: 0,
 		address: "St. Anthony's Lofts. Amherstburg, ON.",
 		description: 'Lofts Available Now!',
 		contactLink: 'https://www.instagram.com/liveatthelofts/?hl=en',
@@ -21,7 +21,7 @@ export const PROPERTYLIST: Property[] = [
 			'https://www.realtor.ca/real-estate/26115295/247-brock-street-unit-204-amherstburg',
 	},
 	{
-		id: 2,
+		id: 1,
 		address: "St. John's Apartments, Amherstburg, ON.",
 		description: 'Apartments Available Now!',
 		contactLink: 'https://www.facebook.com/profile.php?id=61551698053689',
@@ -39,7 +39,7 @@ export const PROPERTYLIST: Property[] = [
 		listingLink: '',
 	},
 	{
-		id: 3,
+		id: 2,
 		address: '365 Sandwich Street S. Amherstburg, ON.',
 		description: 'Commercial Space available for lease.',
 		contactLink:
@@ -49,7 +49,7 @@ export const PROPERTYLIST: Property[] = [
 		altText: 'an empty parking lot in front of a building. ',
 	},
 	{
-		id: 4,
+		id: 3,
 		address: 'Weston Apartments. Essex, ON.',
 		description: '2 bedroom, 2 bathroom units available for rent.',
 		contactLink: 'https://westonessex.com/',
@@ -58,7 +58,7 @@ export const PROPERTYLIST: Property[] = [
 		altText: 'a parking lot with several cars parked in it. ',
 	},
 	{
-		id: 5,
+		id: 4,
 		address: 'Amherstburg Yacht Club. Amherstburg, ON.',
 		description: 'Boat wells available for rent',
 		contactLink: 'https://www.facebook.com/amherstburgyachtclub',
@@ -67,7 +67,7 @@ export const PROPERTYLIST: Property[] = [
 		altText: 'an aerial view of a marina with boats docked. ',
 	},
 	{
-		id: 6,
+		id: 5,
 		address: 'River Canard Yacht Club. Amherstburg, ON.',
 		description:
 			'Boat wells available for rent. Daily and seasonal launch passes available.',
@@ -77,7 +77,7 @@ export const PROPERTYLIST: Property[] = [
 		altText: 'a view of a boat dock from across the street. ',
 	},
 	{
-		id: 7,
+		id: 6,
 		address: 'Garage Gym. Amherstburg, ON.',
 		description: 'Space available for lease.',
 		contactLink: '',
